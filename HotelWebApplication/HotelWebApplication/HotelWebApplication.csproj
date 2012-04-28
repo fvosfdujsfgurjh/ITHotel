@@ -74,12 +74,34 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\HotelDataBase.mdf" />
+    <Content Include="App_Data\HotelDataBase_log.ldf">
+      <DependentUpon>HotelDataBase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\images\about a.png" />
+    <Content Include="Content\images\about.png" />
+    <Content Include="Content\images\account a.png" />
+    <Content Include="Content\images\account.png" />
+    <Content Include="Content\images\background_image.jpg" />
+    <Content Include="Content\images\home a.png" />
+    <Content Include="Content\images\home.png" />
+    <Content Include="Content\images\login.png" />
+    <Content Include="Content\images\service a.png" />
+    <Content Include="Content\images\service.png" />
+    <Content Include="Content\Index.css" />
+    <Content Include="Content\MasterPage.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="jquery-1.7.2.js" />
+    <Content Include="Scripts\jquery-1.7.2.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.19.custom.min.js" />
+    <Content Include="Scripts\PageScripts\MasterPage.js" />
     <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Home\Account.ascx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Home\Rooms.aspx" />
+    <Content Include="Views\jquery-1.7.2.js" />
     <Content Include="Views\Rooms\RoomInfo.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

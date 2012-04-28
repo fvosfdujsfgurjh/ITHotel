@@ -1,13 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/MasterPage.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/MasterPage.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+
+
+ 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+    
+    <head>    
+    <title> главная страница </title>
+        <link href="../../Content/Index.css" rel="stylesheet" type="text/css" />
+    </head>   
 	Index
 </asp:Content>
-
-<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
-    <h2>Index</h2>
-
-</asp:Content>
-
-<asp:Content ClientIDMode=AutoID></asp:Content>
