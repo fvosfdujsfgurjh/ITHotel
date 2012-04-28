@@ -1,0 +1,5 @@
+C:\Users\Николай\Desktop\IT\Hotel\Project\HotelWebApplication\HotelWebApplication\bin\HotelWebApplication.dll
+C:\Users\Николай\Desktop\IT\Hotel\Project\HotelWebApplication\HotelWebApplication\bin\HotelWebApplication.pdb
+C:\Users\Николай\Desktop\IT\Hotel\Project\HotelWebApplication\HotelWebApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Николай\Desktop\IT\Hotel\Project\HotelWebApplication\HotelWebApplication\obj\Debug\HotelWebApplication.dll
+C:\Users\Николай\Desktop\IT\Hotel\Project\HotelWebApplication\HotelWebApplication\obj\Debug\HotelWebApplication.pdb
