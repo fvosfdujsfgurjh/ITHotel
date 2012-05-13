@@ -10,9 +10,14 @@
 <div id="mainData">
   
     <div id="signInDiv">
+
         <input type="text" id="loginSignIn" />
         <input type="password" id="passwordSignIn" />
-        <button id="signInButton">Sign In</button>
+
+        <div id="signInButtonDiv">
+            <button id="signInButton">Sign In</button>
+        </div>
+        
     </div>
 
     <div id="signOutDiv">
