@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HotelWebApplication.Models.Business_Logic;
+using HotelWebApplication.Models.Entity_Model;
 
 namespace HotelWebApplication.Controllers
 {
@@ -13,21 +15,30 @@ namespace HotelWebApplication.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            Client client = (Client) Session["Client"];
+            if (client != null)
+            {
+                ViewData["PersonalData"] = client.PersonalData;
+            }
+            return View(ViewData);
         }
 
-        public ActionResult Account()
-        {
-            return View();
-        }
 
-
-        public ActionResult About()
-        {
-            return View();
-        }
 
         public ActionResult Rooms()
+        {
+            return View();
+        }
+
+        public ActionResult Registration()
+        {
+            return View();
+        }        
+
+        
+
+        [HttpGet]
+        public ActionResult Account()
         {
             return View();
         }

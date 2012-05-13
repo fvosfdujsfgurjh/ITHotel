@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelLocalDataDaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="HoteDb" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="HotelLocalDataDaseModel.Client" />
+    <EntitySet Name="LivingHystories" EntityType="HotelLocalDataDaseModel.LivingHystory" />
+    <EntitySet Name="Orders" EntityType="HotelLocalDataDaseModel.Order" />
+    <EntitySet Name="Rooms" EntityType="HotelLocalDataDaseModel.Room" />
+    <EntitySet Name="RoomTypes" EntityType="HotelLocalDataDaseModel.RoomType" />
+    <EntitySet Name="Users" EntityType="HotelLocalDataDaseModel.User" />
+    <AssociationSet Name="FK_Clients_Users" Association="HotelLocalDataDaseModel.FK_Clients_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Clients" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Clients" Association="HotelLocalDataDaseModel.FK_Orders_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LivingHystory_Orders" Association="HotelLocalDataDaseModel.FK_LivingHystory_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="LivingHystory" EntitySet="LivingHystories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Rooms" Association="HotelLocalDataDaseModel.FK_Orders_Rooms">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rooms_RoomTypes" Association="HotelLocalDataDaseModel.FK_Rooms_RoomTypes">
+      <End Role="RoomTypes" EntitySet="RoomTypes" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="ClientID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="PersonalData" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="BirthDate" Type="DateTime" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="User" Relationship="HotelLocalDataDaseModel.FK_Clients_Users" FromRole="Clients" ToRole="Users" />
+    <NavigationProperty Name="Orders" Relationship="HotelLocalDataDaseModel.FK_Orders_Clients" FromRole="Clients" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="LivingHystory">
+    <Key>
+      <PropertyRef Name="ItemID" />
+    </Key>
+    <Property Name="ItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="HotelLocalDataDaseModel.FK_LivingHystory_Orders" FromRole="LivingHystory" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClientID" Type="Int32" Nullable="false" />
+    <Property Name="RoomID" Type="Int32" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <Property Name="StatusID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Client" Relationship="HotelLocalDataDaseModel.FK_Orders_Clients" FromRole="Orders" ToRole="Clients" />
+    <NavigationProperty Name="LivingHystories" Relationship="HotelLocalDataDaseModel.FK_LivingHystory_Orders" FromRole="Orders" ToRole="LivingHystory" />
+    <NavigationProperty Name="Room" Relationship="HotelLocalDataDaseModel.FK_Orders_Rooms" FromRole="Orders" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomID" />
+    </Key>
+    <Property Name="RoomID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Capacity" Type="Int32" Nullable="false" />
+    <Property Name="RoomNumber" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="HotelLocalDataDaseModel.FK_Orders_Rooms" FromRole="Rooms" ToRole="Orders" />
+    <NavigationProperty Name="RoomType" Relationship="HotelLocalDataDaseModel.FK_Rooms_RoomTypes" FromRole="Rooms" ToRole="RoomTypes" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="RoomTypeID" />
+    </Key>
+    <Property Name="RoomTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Rooms" Relationship="HotelLocalDataDaseModel.FK_Rooms_RoomTypes" FromRole="RoomTypes" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Clients" Relationship="HotelLocalDataDaseModel.FK_Clients_Users" FromRole="Users" ToRole="Clients" />
+  </EntityType>
+  <Association Name="FK_Clients_Users">
+    <End Role="Users" Type="HotelLocalDataDaseModel.User" Multiplicity="1" />
+    <End Role="Clients" Type="HotelLocalDataDaseModel.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Clients">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Clients">
+    <End Role="Clients" Type="HotelLocalDataDaseModel.Client" Multiplicity="1" />
+    <End Role="Orders" Type="HotelLocalDataDaseModel.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="ClientID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="ClientID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LivingHystory_Orders">
+    <End Role="Orders" Type="HotelLocalDataDaseModel.Order" Multiplicity="1" />
+    <End Role="LivingHystory" Type="HotelLocalDataDaseModel.LivingHystory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="LivingHystory">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Rooms">
+    <End Role="Rooms" Type="HotelLocalDataDaseModel.Room" Multiplicity="1" />
+    <End Role="Orders" Type="HotelLocalDataDaseModel.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="RoomID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="RoomID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rooms_RoomTypes">
+    <End Role="RoomTypes" Type="HotelLocalDataDaseModel.RoomType" Multiplicity="1" />
+    <End Role="Rooms" Type="HotelLocalDataDaseModel.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomTypes">
+        <PropertyRef Name="RoomTypeID" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="RoomTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

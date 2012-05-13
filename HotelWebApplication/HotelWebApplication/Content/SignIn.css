@@ -1,0 +1,34 @@
+﻿
+#signInDiv
+{
+	
+}
+
+#signOutDiv
+{
+	display: none
+}
+
+#mainData
+{
+	width: 80%
+}
+
+#loginSignIn
+{
+	width: 90%;
+	vertical-align: middle
+}
+
+#passwordSignIn
+{
+	width: 90%;
+	vertical-align: middle
+}
+
+#welcomeLabel
+{
+	font-size: 14;
+	font-style: italic;
+	color: White
+}
