@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
     
     <head>    
-    <title> главная страница </title>
+    <title> guy && guy hotel </title>
         <link href="../../Content/Index.css" rel="stylesheet" type="text/css" />
     </head>   
 </asp:Content>

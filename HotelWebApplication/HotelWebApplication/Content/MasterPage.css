@@ -30,27 +30,49 @@
 {
 	height: 100px;
 	width: 100%;
+	min-width: 1000px;
+	position: relative;
 }
 
+#header_container
+{
+	width: 420px;
+	height: 95px;
+	position: relative;
+	padding: 1px;
+	float: left;
+	margin-left: 35%;
+	margin-top: 0.2%;
+	top: 0.5%;
+}
 
 #home_header
 {
 	height: 41px;
 	width: 102px;
-	position: absolute;
+	min-width: 102px;
+	position:relative;
+	float: left;
+	margin: 1px;
 	background-image:url(../Content/images/home.png);
-	top: 4px;
-	left: 470px;
+	top: 0;
+	left: 0;
+	cursor: pointer 
+
 }
 
 #home_header_a
 {
 	height: 41px;
 	width: 102px;
-	position: absolute;
+	min-width: 102px;
+	position:relative;
+	float: left;
+	margin: 1px;
 	background-image:url(../Content/images/home a.png);
-	top: 4px;
-	left: 470px;
+	top: 0;
+	left: 0;
+	cursor: pointer 
 }
 
 
@@ -58,41 +80,86 @@
 {
 	height: 41px;
 	width: 102px;
-	position: absolute;
+	min-width: 102px;
+	position: relative;
+	float: left;
+	margin: 1px;
 	background-image:url(../Content/images/about.png);
-	top: 4px;
-	left: 574px;
+	top: 0;
+	left: 0;
+	cursor: pointer 
 }
 
 #servise_header
 {
 	height: 41px;
 	width: 102px;
-	position: absolute;
+	min-width: 102px;
+	position: relative;
+	float: left;
+	margin: 1px;
 	background-image:url(../Content/images/service.png);
-	top: 4px;
-	left: 678px;
+	top: 0;
+	left: 0;
+	cursor: pointer 
 }
 
 #account_header
 {
 	height: 41px;
 	width: 102px;
-	position: absolute;
+	min-width: 102px;
+	position: relative;
+	float: left;
+	margin: 1px;
 	background-image:url(../Content/images/account.png);
-	top: 4px;
-	left: 782px;
+	top: 0;
+	left: 0;
+	cursor: pointer 
 }
 
 #login
 {
-	height: 100px;
-	width: 150px;
-	position:absolute;
-	background-image:url(../Content/images/login.png);
+	width: 170px;
+	height: 30px;
+	position: relative;
+	float: right;
+	margin: 0.2%;
+	padding: 1px;
+	top: 0.5%
+}
+
+#sign_n
+{
+	height: 28px;
+	width: 83px;
+	position: relative;
+	float: left;
+	margin: 1px;
+	background-image:url(../Content/images/s_na.png);
 	background-repeat:no-repeat;
+	top: 1%;
+	left: 0;
+	cursor: pointer 
+}
+
+#registration
+{
+	height: 28px;
+	width: 83px;
+	position: relative;
+	float: left;
+	margin: 1px;
+	background-image:url(../Content/images/reg_na.png);
+	background-repeat:no-repeat;
+<<<<<<< HEAD
 	top: 0px;
 	right: 5px;
 	text-align: center;
 	vertical-align: middle
 }
+=======
+	top: 1%;
+	left: 0;
+	cursor: pointer 
+>>>>>>> 856523dfffbab1053eb390d9210df8b4b2a78ad4

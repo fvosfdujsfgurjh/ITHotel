@@ -89,7 +89,11 @@
     <Content Include="App_Data\HotelLocalDataDase_log.ldf">
       <DependentUpon>HotelLocalDataDase.mdf</DependentUpon>
     </Content>
+<<<<<<< HEAD
     <Content Include="Content\Account.css" />
+=======
+    <Content Include="Content\AboutCSS.css" />
+>>>>>>> 856523dfffbab1053eb390d9210df8b4b2a78ad4
     <Content Include="Content\images\about a.png" />
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\account a.png" />
@@ -100,10 +104,20 @@
     <Content Include="Content\images\login.png" />
     <Content Include="Content\images\Registration_a.png" />
     <Content Include="Content\images\Registration_n_a.png" />
+    <Content Include="Content\images\reg_a.png" />
+    <Content Include="Content\images\reg_na.png" />
+    <Content Include="Content\images\rooms_container.png" />
+    <Content Include="Content\images\rooms_list.png" />
+    <Content Include="Content\images\rooms_view.png" />
     <Content Include="Content\images\service a.png" />
     <Content Include="Content\images\service.png" />
+    <Content Include="Content\images\Sign_dialog.png" />
     <Content Include="Content\images\Sign_In_a.png" />
     <Content Include="Content\images\Sign_In_a_a.png" />
+    <Content Include="Content\images\s_a.png" />
+    <Content Include="Content\images\s_na.png" />
+    <Content Include="Content\images\s_out_a.png" />
+    <Content Include="Content\images\s_out_na.png" />
     <Content Include="Content\Index.css" />
     <Content Include="Content\jQuery Resources\Images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
     <Content Include="Content\jQuery Resources\Images\ui-bg_diagonals-thick_20_666666_40x40.png" />
@@ -121,6 +135,7 @@
     <Content Include="Content\jQuery Resources\Images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\jQuery Resources\jquery-ui-1.8.18.custom.css" />
     <Content Include="Content\MasterPage.css" />
+    <Content Include="Content\RoomsCSS.css" />
     <Content Include="Content\SignIn.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

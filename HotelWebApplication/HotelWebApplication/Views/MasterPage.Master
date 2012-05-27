@@ -24,6 +24,7 @@
         <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
             <div id="header"> 
 
+<<<<<<< HEAD
 	            <div>
                 
    	            	<a href="/Home/Index" id="home_header"></a>
@@ -33,6 +34,19 @@
 
 	            <div id="login">
                         <% Html.RenderPartial("../SignIn/SignIn"); %>            
+=======
+	            <div id="header_container">                
+   	            	<div id="home_header" onclick="alert('in progress')"> </div>
+                  	<a href="/Home/About" id="about_header"> </a>
+                    <a href="/Home/Rooms" id="servise_header"> </a> 
+                   	<div id="account_header"> </div>
+                </div>
+
+	            <div id="login">
+                    <div id="sign_n"> </div>
+                    <div id="registration"> </div>
+                    <% Html.RenderPartial("../SignIn/SignIn"); %>                 
+>>>>>>> 856523dfffbab1053eb390d9210df8b4b2a78ad4
   	            </div>
 
             </div>
