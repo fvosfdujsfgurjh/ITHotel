@@ -88,6 +88,7 @@
     <Content Include="App_Data\HotelLocalDataDase_log.ldf">
       <DependentUpon>HotelLocalDataDase.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\AboutCSS.css" />
     <Content Include="Content\images\about a.png" />
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\account a.png" />
@@ -100,6 +101,9 @@
     <Content Include="Content\images\Registration_n_a.png" />
     <Content Include="Content\images\reg_a.png" />
     <Content Include="Content\images\reg_na.png" />
+    <Content Include="Content\images\rooms_container.png" />
+    <Content Include="Content\images\rooms_list.png" />
+    <Content Include="Content\images\rooms_view.png" />
     <Content Include="Content\images\service a.png" />
     <Content Include="Content\images\service.png" />
     <Content Include="Content\images\Sign_dialog.png" />
@@ -126,6 +130,7 @@
     <Content Include="Content\jQuery Resources\Images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\jQuery Resources\jquery-ui-1.8.18.custom.css" />
     <Content Include="Content\MasterPage.css" />
+    <Content Include="Content\RoomsCSS.css" />
     <Content Include="Content\SignIn.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

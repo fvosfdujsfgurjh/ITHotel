@@ -1,0 +1,111 @@
+﻿html, body
+{
+	font-family: a_FuturaRound, Arial;
+	color: #FFF;
+	text-shadow: black 1px 1px 2px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1200px;
+	background-color:#000;
+	background-image: url(../Content/images/background_image.jpg);
+	background-repeat: no-repeat;
+	background-position: center	
+}
+
+body
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position: relative;
+	background-repeat:no-repeat;
+	text-align: center;
+	margin: 0 auto
+}
+
+
+
+div#content
+{
+	width: 100%;
+	height: 366px;
+	position: relative;
+	padding-bottom: 100px;
+	text-align: left
+}
+
+#rooms_container
+{
+	height: 560px;
+	width: 1004px;
+	position: absolute;
+	left: 181px;
+	top: 70px;
+	margin: 1px;
+	background-image: url(../Content/images/rooms_container.png);
+	background-repeat:no-repeat
+}
+
+#rooms_list
+{
+	width: 188px;
+	height: 550px;
+	position: relative;
+	float: left;
+	background-image: url(../Content/images/rooms_list.png);
+	margin-left: 4px;
+	margin-top: 4px	
+}
+
+#rooms_view
+{
+	width: 808px;
+	height: 550px;
+	position: relative;
+	float: right;
+	background-image: url(../Content/images/rooms_view.png);
+	margin-right: 4px;
+	margin-top: 4px	
+}
+
+#list
+{
+	width: 180px;
+	height: 540px;
+	position: relative;
+	float: right;
+	list-style-type: none;
+	margin-right: 3px;
+	margin-top: 20px
+}
+
+A:link
+{
+	color: #CCC
+}
+
+A:visited
+{
+	color: #999
+}
+
+A:hover
+{
+	color: #FFF
+}
+
+A:active
+{
+	color: #6CF
+}
+
+div#footer
+{
+	height: 100px;
+	width: 100%;
+	position: relative;
+	float: left;
+	bottom: 0
+}

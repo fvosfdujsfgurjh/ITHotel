@@ -13,3 +13,8 @@ c:\Users\rufan\Git source\HotelWebApplication\HotelWebApplication\bin\HotelWebAp
 c:\Users\rufan\Git source\HotelWebApplication\HotelWebApplication\obj\Debug\ResolveAssemblyReference.cache
 c:\Users\rufan\Git source\HotelWebApplication\HotelWebApplication\obj\Debug\HotelWebApplication.dll
 c:\Users\rufan\Git source\HotelWebApplication\HotelWebApplication\obj\Debug\HotelWebApplication.pdb
+c:\Users\rufan\ITHotel\HotelWebApplication\HotelWebApplication\bin\HotelWebApplication.dll
+c:\Users\rufan\ITHotel\HotelWebApplication\HotelWebApplication\bin\HotelWebApplication.pdb
+c:\Users\rufan\ITHotel\HotelWebApplication\HotelWebApplication\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\rufan\ITHotel\HotelWebApplication\HotelWebApplication\obj\Debug\HotelWebApplication.dll
+c:\Users\rufan\ITHotel\HotelWebApplication\HotelWebApplication\obj\Debug\HotelWebApplication.pdb
