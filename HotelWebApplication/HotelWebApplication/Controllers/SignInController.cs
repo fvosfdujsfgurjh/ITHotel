@@ -20,13 +20,28 @@ namespace HotelWebApplication.Controllers
             try
             {
                 cl = HotelContext.SignIn(user);
-                Session.Add("Client", cl);
+                //return JavaScript("$.cookie('sid','edfgjergerf34534534ldnfg')");
+                /*var cookieUser = new
+                {
+                    id = cl.ClientID,
+                    birth_date = cl.BirthDate,
+                    phone = cl.Phone,
+                    personal_data = cl.PersonalData,
+                    login = login,
+                    password = password
+                };*/
+                string client_id = cl.ClientID.ToString();
+                string personal_data = cl.PersonalData;
+
+
+                return Json(new {id = client_id, name = personal_data}, JsonRequestBehavior.AllowGet);
+                //string result = String.Format("alert('Hello ' {0});", cl.PersonalData);
+                //return JavaScript("alert('ok')");
             }
             catch (Exception ex)
             {
                 return Json(new { success = false, error = ex.Message }, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { success = true, name = cl.PersonalData }, JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]

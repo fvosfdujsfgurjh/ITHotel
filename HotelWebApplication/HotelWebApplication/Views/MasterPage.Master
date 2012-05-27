@@ -13,8 +13,9 @@
     <link href="http://localhost:15261/Content/jQuery%20Resources/jquery-ui-1.8.18.custom.css"
         rel="stylesheet" type="text/css" />
     <script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
-    <script src="http://localhost:15261/Scripts/jquery-ui-1.8.19.custom.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.cookies.js" type="text/javascript"></script>
     <script src="../Scripts/PageScripts/MasterPage.js" type="text/javascript"></script>
+    <script src="../Scripts/PageScripts/SignIn.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -25,21 +26,21 @@
 
 	            <div>
                 
-   	            	<div id="home_header" onclick="alert('in progress')"> </div>
+   	            	<a href="/Home/Index" id="home_header"></a>
                   	<div id="about_header" onclick="alert('in progress')"> </div>
                   	<div id="servise_header" onclick="alert('in progress')"> </div>
-                   	<div id="account_header"> </div>
-                </div>
+                    <div id="account_header" ><a href="/Account/Account" id="account_link"></a></div>
 
 	            <div id="login">
-                    <% Html.RenderPartial("../SignIn/SignIn"); %>                 
+                        <% Html.RenderPartial("../SignIn/SignIn"); %>            
   	            </div>
 
-        </div>
+            </div>
         </asp:ContentPlaceHolder>
     </div>
     <div>
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <h1> Master Page Main Content</h1>
         </asp:ContentPlaceHolder>
     </div>
     <div>

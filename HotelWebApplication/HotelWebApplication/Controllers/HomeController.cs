@@ -15,12 +15,7 @@ namespace HotelWebApplication.Controllers
 
         public ActionResult Index()
         {
-            Client client = (Client) Session["Client"];
-            if (client != null)
-            {
-                ViewData["PersonalData"] = client.PersonalData;
-            }
-            return View(ViewData);
+            return View();
         }
 
 
@@ -37,10 +32,14 @@ namespace HotelWebApplication.Controllers
 
         
 
-        [HttpGet]
+        
         public ActionResult Account()
         {
-            return View();
+            Client cl = (Client)Session["Client"];
+            if (cl == null)
+                return Json(new { success = false }, JsonRequestBehavior.AllowGet);
+            else
+                return View(cl);
         }
     }
 }
