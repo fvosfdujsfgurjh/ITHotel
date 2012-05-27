@@ -89,11 +89,8 @@
     <Content Include="App_Data\HotelLocalDataDase_log.ldf">
       <DependentUpon>HotelLocalDataDase.mdf</DependentUpon>
     </Content>
-<<<<<<< HEAD
     <Content Include="Content\Account.css" />
-=======
     <Content Include="Content\AboutCSS.css" />
->>>>>>> 856523dfffbab1053eb390d9210df8b4b2a78ad4
     <Content Include="Content\images\about a.png" />
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\account a.png" />
