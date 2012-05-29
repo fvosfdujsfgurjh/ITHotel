@@ -35,7 +35,8 @@
                 <div id="login">
                     <div id="sign_n"> </div>
                     <div id="registration"> </div>
-                    <% Html.RenderPartial("../SignIn/SignIn"); %>                 
+                    <% Html.RenderPartial("../SignIn/SignIn"); %>   
+                    <% Html.RenderPartial("../Registration/Registration"); %>                
   	            </div>
 
             </div>

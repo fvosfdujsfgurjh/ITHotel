@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
     <Compile Include="Controllers\SignInController.cs" />
     <Compile Include="Global.asax.cs">
@@ -102,6 +103,7 @@
     <Content Include="Content\images\Registration_a.png" />
     <Content Include="Content\images\Registration_n_a.png" />
     <Content Include="Content\images\reg_a.png" />
+    <Content Include="Content\images\Reg_dialog.png" />
     <Content Include="Content\images\reg_na.png" />
     <Content Include="Content\images\rooms_container.png" />
     <Content Include="Content\images\rooms_list.png" />
@@ -132,6 +134,7 @@
     <Content Include="Content\jQuery Resources\Images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\jQuery Resources\jquery-ui-1.8.18.custom.css" />
     <Content Include="Content\MasterPage.css" />
+    <Content Include="Content\Registration.css" />
     <Content Include="Content\RoomsCSS.css" />
     <Content Include="Content\SignIn.css" />
     <Content Include="Global.asax" />
@@ -147,9 +150,9 @@
     <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Account\Account.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Home\Registration.ascx" />
     <Content Include="Views\Home\Rooms.aspx" />
     <Content Include="Views\jquery-1.7.2.js" />
+    <Content Include="Views\Registration\Registration.ascx" />
     <Content Include="Views\Rooms\RoomInfo.ascx" />
     <Content Include="Views\SignIn\SignIn.ascx" />
     <Content Include="Web.config" />

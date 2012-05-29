@@ -14,6 +14,7 @@
             <div id="rooms_container">     
                 <div id="rooms_list">
     	            <ul id="list">
+                        <li> <a href="#"> guy && guy hotel  </a> </li>
         	            <li> <a href="#"> Обычная комната </a> </li>
         	            <li> <a href="#"> Хорошая комната </a> </li>
                 	    <li> <a href="#"> Отличная комната </a> </li>

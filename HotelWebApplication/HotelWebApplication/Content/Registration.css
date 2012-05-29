@@ -1,0 +1,84 @@
+﻿#InputsDiv
+{
+    
+}
+
+
+#RegMainData
+{
+	width: 335px;
+	height: 307px;
+	position: relative;
+	float: right;
+	background-image:url(../Content/images/Reg_dialog.png);
+	margin-right: 507px;
+    margin-top: -110px
+}
+
+#RegUsername
+{
+	width: 50%;
+	position: relative;
+	float: right;
+	margin-top: 58px;
+	margin-right: 20px;
+	vertical-align: middle
+}
+
+#RegPassword
+{
+	width: 50%;
+	position: relative;
+	float: right;
+	margin-top: 12px;
+	margin-right: 20px;
+	vertical-align: middle
+}
+
+#RegPersonalData
+{
+	width: 50%;
+	position: relative;
+	float: right;
+	margin-top: 32px;
+	margin-right: 20px;
+	vertical-align: middle
+}
+
+#RegTelephone
+{
+	width: 50%;
+	position: relative;
+	float: right;
+	margin-top: 12px;
+	margin-right: 20px;
+	vertical-align: middle
+}
+
+#RegDateBirth
+{
+	width: 50%;
+	position: relative;
+	float: right;
+	margin-top: 12px;
+	margin-right: 20px;
+	vertical-align: middle
+}
+
+#RegOkButton
+{
+    width: 49%;
+    position: relative;
+    float: left;
+    margin-top: 18px;
+    margin-left: 5px
+}
+
+#RegCancelButton
+{
+    width: 100px;
+    position: relative;
+    float: left;
+    margin-top: 18px;
+    margin-left: 20px
+}

@@ -25,10 +25,7 @@ namespace HotelWebApplication.Controllers
             return View();
         }
 
-        public ActionResult Registration()
-        {
-            return View();
-        }
+        
 
         public ActionResult About()
         {
