@@ -21,7 +21,7 @@ $(function () {
                 alert(response.error);
             }
             else {
-                $('#signInDiv').animate({ opacity: '0' }, 'slow');
+                $('#mainData').animate({ opacity: '0' }, 'slow');
                 $('#sign_in').animate({ opacity: '0' }, 'slow');
                 $('#registration').animate({ opacity: '0' }, 'slow');
                 $('#sign_in').css('display', 'none');
