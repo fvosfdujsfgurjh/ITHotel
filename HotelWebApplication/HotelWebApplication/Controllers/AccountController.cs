@@ -19,7 +19,7 @@ namespace HotelWebApplication.Controllers
                 int client_id = Convert.ToInt32(id);
                 Client client = HotelContext.GetClientById(client_id);
                 //return View("Account", client);
-                string path = String.Format("/Account/Test?id={0}", client.ClientID.ToString());
+                string path = String.Format("/Account/ClientAccount?id={0}", client.ClientID.ToString());
                 return Json(new { success = true, path = path }, JsonRequestBehavior.AllowGet);
             }
             catch (InvalidOperationException)
@@ -29,16 +29,16 @@ namespace HotelWebApplication.Controllers
         }
 
         [HttpGet]
-        public ActionResult Test(int id)
+        public ActionResult ClientAccount(int id)
         {
             Client cl = HotelContext.GetClientById(id);
             return View("Account", cl);
         }
 
         [HttpPost]
-        public ActionResult SaveAccount(string name, string birthdate, string phone)
+        public ActionResult SaveAccount(string id, string name, string birthdate, string phone)
         {
-            Client cl = (Client) Session["Client"];
+            Client cl = HotelContext.GetClientById(Convert.ToInt32(id));
             cl.PersonalData = name;
             cl.Phone = phone;
             cl.BirthDate = Convert.ToDateTime(birthdate);

@@ -177,6 +177,7 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Registration\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
