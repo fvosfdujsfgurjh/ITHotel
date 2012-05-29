@@ -33,8 +33,12 @@
                     </div>
 	            </div>
                 <div id="login">
-                    <div id="sign_n"> </div>
+                    <div id="sign_in"> </div>
                     <div id="registration"> </div>
+                    <div id="user_info">
+                        <label id="user_name"></label>
+                        <button id="sign_out_button"> Sign Out </button>
+                    </div>
                     <% Html.RenderPartial("../SignIn/SignIn"); %>                 
   	            </div>
 

@@ -1,23 +1,10 @@
-﻿
-#signInDiv
-{
- 
-}
-
-#signOutDiv
-{
-	
-}
-
-#mainData
+﻿#mainData
 {
 	width: 224px;
 	height: 167px;
 	position: relative;
 	float: right;
 	margin-top: 40px;
-	background-image:url(../Content/images/Sign_dialog.png);
-	
 }
 
 #loginSignIn
@@ -56,3 +43,12 @@
 	color: White
 }
 
+#signInDiv
+{
+	width: 224px;
+	height: 167px;
+	position: relative;
+	/*float: right;*/
+	margin-top: 40px;
+	background-image:url(../Content/images/Sign_dialog.png);
+}

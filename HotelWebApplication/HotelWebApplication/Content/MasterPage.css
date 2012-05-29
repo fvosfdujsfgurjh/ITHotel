@@ -129,7 +129,7 @@
 	top: 0.5%
 }
 
-#sign_n
+#sign_in
 {
 	height: 28px;
 	width: 83px;
@@ -156,4 +156,13 @@
 	right: 5px;
 	text-align: center;
 	vertical-align: middle
+}
+
+#user_name
+{
+	float: left;
+	margin-right: 10%;
+	font-size: 14;
+	font-style: italic;
+	color: White
 }

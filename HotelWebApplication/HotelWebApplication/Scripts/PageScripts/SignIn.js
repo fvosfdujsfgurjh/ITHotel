@@ -1,20 +1,8 @@
-﻿/// <reference path="../jquery.cookies.js" />
-/// <reference path="../jquery-1.7.2.js" />
+﻿/// <reference path="../jquery-1.4.1.js" />
+/// <reference path="../jquery.cookies.js" />
 
 
 $(function () {
-    var curr_user_id = $.cookie('id');
-    if (curr_user_id == null) {
-        $('#signInDiv').css('display', 'block');
-        $('#signOutDiv').css('display', 'none');
-    }
-    else {
-        $('#signOutDiv').css('display', 'block');
-        $('#signInDiv').css('display', 'none');
-        var name = $.cookie('name');
-        $('#welcomeLabel').text(name);
-    }
-    var elem = ('#signInButton');
     $('#signInButton').click(function () {
         var login = $('#loginSignIn').val();
         var password = $('#passwordSignIn').val();
@@ -33,18 +21,17 @@ $(function () {
                 alert(response.error);
             }
             else {
-                $('#signInDiv').hide('0.3');
-                $('#signOutDiv').show('0.3');
-                $('#welcomeLabel').text(response.name);
-                $.cookie('name', response.name);
-                $.cookie('id', response.id);
+                $('#signInDiv').animate({ opacity: '0' }, 'slow');
+                $('#sign_in').animate({ opacity: '0' }, 'slow');
+                $('#registration').animate({ opacity: '0' }, 'slow');
+                $('#sign_in').css('display', 'none');
+                $('#registration').css('display', 'none');
+                $('#user_info').css('display', 'block');
+                $('#user_info').animate({ opacity: '1' }, 'slow');
+                $('#user_name').text(response.name);
+                $.cookie('name', response.name, { path: '/' });
+                $.cookie('id', response.id, { path: '/' });
             }
         });
-    });
-    $('#signOutButton').click(function () {
-        $('#signOutDiv').hide('0.3');
-        $('#signInDiv').show('0.3');
-        $.cookie('name', null);
-        $.cookie('id', null);
     });
 });
