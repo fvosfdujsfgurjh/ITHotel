@@ -41,6 +41,7 @@
                         <label id="user_name"></label>
                         <button id="sign_out_button"> Sign Out </button>
                     </div>
+                    </div>               
   	            </div>
 
             </div>
