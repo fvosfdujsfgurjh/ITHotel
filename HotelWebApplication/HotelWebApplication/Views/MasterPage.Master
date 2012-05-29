@@ -35,16 +35,12 @@
                 <div id="login">
                     <div id="sign_in"> </div>
                     <div id="registration"> </div>
-<<<<<<< HEAD
                     <% Html.RenderPartial("../SignIn/SignIn"); %>   
                     <% Html.RenderPartial("../Registration/Registration"); %>                
-=======
                     <div id="user_info">
                         <label id="user_name"></label>
                         <button id="sign_out_button"> Sign Out </button>
-                    </div>
-                    <% Html.RenderPartial("../SignIn/SignIn"); %>                 
->>>>>>> 5393d7ffeb47240596ec71ee31df44bccf69a097
+                    </div>               
   	            </div>
 
             </div>
