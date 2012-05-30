@@ -98,6 +98,7 @@
     <Content Include="Content\images\account.png" />
     <Content Include="Content\images\AccountDialog.png" />
     <Content Include="Content\images\background_image.jpg" />
+    <Content Include="Content\images\camera_a.png" />
     <Content Include="Content\images\home a.png" />
     <Content Include="Content\images\home.png" />
     <Content Include="Content\images\login.png" />
@@ -137,6 +138,7 @@
     <Content Include="Content\MasterPage.css" />
     <Content Include="Content\Registration.css" />
     <Content Include="Content\RoomsCSS.css" />
+    <Content Include="Content\RoomsList.css" />
     <Content Include="Content\SignIn.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -147,6 +149,8 @@
     <Content Include="Scripts\jquery.cookies.js" />
     <Content Include="Scripts\PageScripts\Account.js" />
     <Content Include="Scripts\PageScripts\MasterPage.js" />
+    <Content Include="Scripts\PageScripts\Registration.js" />
+    <Content Include="Scripts\PageScripts\RoomsList.js" />
     <Content Include="Scripts\PageScripts\SignIn.js" />
     <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Account\Account.aspx" />
@@ -155,6 +159,7 @@
     <Content Include="Views\jquery-1.7.2.js" />
     <Content Include="Views\Registration\Registration.ascx" />
     <Content Include="Views\Rooms\RoomInfo.ascx" />
+    <Content Include="Views\Rooms\RoomsList.ascx" />
     <Content Include="Views\SignIn\SignIn.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

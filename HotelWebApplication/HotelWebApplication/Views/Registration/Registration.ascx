@@ -3,7 +3,14 @@
 <%@ Import Namespace="HotelWebApplication.Models.Entity_Model" %>
 
 
+<<<<<<< HEAD
  <link href="../../Content/Registration.css" rel="stylesheet" type="text/css" />
+=======
+<link href="../../Content/Registration.css" rel="stylesheet" type="text/css" />
+<script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery.cookies.js" type="text/javascript"></script>
+<script src="../../Scripts/PageScripts/Registration.js" type="text/javascript"></script>
+>>>>>>> ba3ec8352b592ccde5c5fd1d9eca98420a672afd
 
 <div id="RegMainData">
      <div id="InputsDiv">

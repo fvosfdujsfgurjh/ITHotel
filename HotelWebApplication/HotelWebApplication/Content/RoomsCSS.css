@@ -67,7 +67,8 @@ div#content
 	float: right;
 	background-image: url(../Content/images/rooms_view.png);
 	margin-right: 4px;
-	margin-top: 4px	
+	margin-top: 4px;
+	overflow: auto	
 }
 
 #list
@@ -108,4 +109,9 @@ div#footer
 	position: relative;
 	float: left;
 	bottom: 0
+}
+
+.listItem
+{
+	cursor: pointer
 }

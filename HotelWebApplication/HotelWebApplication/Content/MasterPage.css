@@ -166,3 +166,9 @@
 	font-style: italic;
 	color: White
 }
+
+#sign_out_button
+{
+	background-image: url(../Content/images/s_out_na.png));
+	cursor: pointer
+}

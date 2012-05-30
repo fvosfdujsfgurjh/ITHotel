@@ -7,7 +7,7 @@ $(function () {
     var curr_user_id = $.cookie('id');
     if (curr_user_id == null) {
         $('#sign_in').css('opacity', '1');
-        $('#registration').css('opacity', '1');
+        $('#registration').css('opacity', '1');        
         $('#user_info').css('opacity', '0');
         $('#sign_in').css('display', 'block');
         $('#registration').css('display', 'block');
@@ -23,6 +23,8 @@ $(function () {
         $('#user_name').text($.cookie('name'));
     }
     $('#mainData').css('opacity', '0');
+    $('#RegMainData').css('opacity', '0');
+    $('#RegMainData').css('display', 'none');
     $('#account_header').click(function () {
         var client_id = $.cookie('id');
         if (client_id == null) {
@@ -40,9 +42,13 @@ $(function () {
     $('#sign_in').click(function () {
         $('#mainData').animate({ opacity: '1' }, 'slow');
     });
+    $('#registration').click(function () {
+        $('#RegMainData').css('display', 'block');
+        $('#RegMainData').animate({ opacity: '1' }, 'slow');
+    });
     $('#sign_out_button').click(function () {
-        $.cookie('name', null, {path: '/'});
-        $.cookie('id', null, {path: '/'});
+        $.cookie('name', null, { path: '/' });
+        $.cookie('id', null, { path: '/' });
         $('#user_info').animate({ opacity: '0' }, 'slow');
         $('#user_info').css('display', 'none');
         $('#sign_in').css('display', 'block');
@@ -50,4 +56,5 @@ $(function () {
         $('#sign_in').animate({ opacity: '1' }, 'slow');
         $('#registration').animate({ opacity: '1' }, 'slow');
     });
+
 });
