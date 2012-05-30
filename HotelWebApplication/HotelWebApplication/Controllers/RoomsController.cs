@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HotelWebApplication.Models.Business_Logic;
+using HotelWebApplication.Models.Entity_Model;
 
 namespace HotelWebApplication.Controllers
 {
@@ -16,5 +18,18 @@ namespace HotelWebApplication.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult RoomsList(string room_type)
+        {
+            List<Room> rooms = HotelContext.GetRoomsList(Convert.ToInt32(room_type));
+            return View("RoomsList", rooms); 
+        }
+
+        [HttpPost]
+        public ActionResult GetAllRooms()
+        {
+            List<Room> rooms = HotelContext.GetAllRooms();
+            return View("RoomsList", rooms);
+        }
     }
 }

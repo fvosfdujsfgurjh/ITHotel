@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/MasterPage.Master" Inherits="System.Web.Mvc.ViewPage<HotelWebApplication.Models.Entity_Model.Client>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Account
     <link href="../../Content/Account.css" rel="stylesheet" type="text/css" />
     <script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
     <script src="../../Scripts/PageScripts/Account.js" type="text/javascript"></script>
@@ -14,7 +13,7 @@
         <% using (Html.BeginForm()) {%>
             <%: Html.ValidationSummary(true) %>
         
-            <fieldset>
+            <div>
             
                 <div class="editor-label">
                     <%: Html.LabelFor(model => model.PersonalData) %>
@@ -43,7 +42,7 @@
                 <p>
                     <input type="button" id="saveButton" value="Save" />
                 </p>
-            </fieldset>
+            </div>
 
         <% } %>
 

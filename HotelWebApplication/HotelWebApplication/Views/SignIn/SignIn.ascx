@@ -18,12 +18,5 @@
         </div>
         
     </div>
-    
-    <!--<div id="signOutDiv">
-        <label id="welcomeLabel">
-        </label>
-        <button id="signOutButton">Sign Out</button>
-    </div>
-    -->
 
 </div>

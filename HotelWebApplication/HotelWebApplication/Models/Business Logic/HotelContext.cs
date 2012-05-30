@@ -45,6 +45,30 @@ namespace HotelWebApplication.Models.Business_Logic
             }
         }
 
+        public static User Registration(User user)
+        {
+            using (HoteDb dataModel = new HoteDb())
+            {
+                bool isUserExists = dataModel.Users.Any(us => us.Login == user.Login && us.Password == user.Password);
+                if (!isUserExists)
+                {
+                    dataModel.Users.AddObject(user);
+                    dataModel.SaveChanges();
+                    return user;
+                }
+                return null;                                
+            }
+        }
+
+        public static void AddClient(Client cl)
+        {
+            using (HoteDb dataModel = new HoteDb())
+            {
+                dataModel.Clients.AddObject(cl);
+                dataModel.SaveChanges();
+            }
+        }
+
         public static void SaveAccountChanges(Client client)
         {
             if (client == null)
@@ -74,6 +98,14 @@ namespace HotelWebApplication.Models.Business_Logic
                 rooms = db.Rooms.ToList<Room>();
             }
             return rooms;
+        }
+
+        public static List<Room> GetRoomsList(int room_type)
+        {
+            using (HoteDb dataModel = new HoteDb())
+            {
+                return dataModel.Rooms.Where(r => r.RoomTypeID == room_type).ToList();
+            }
         }
 
         public static List<Order> GetAllClientOrders(int client_id)

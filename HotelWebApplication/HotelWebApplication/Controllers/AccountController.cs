@@ -41,7 +41,10 @@ namespace HotelWebApplication.Controllers
             Client cl = HotelContext.GetClientById(Convert.ToInt32(id));
             cl.PersonalData = name;
             cl.Phone = phone;
-            cl.BirthDate = Convert.ToDateTime(birthdate);
+            if (!String.IsNullOrEmpty(birthdate))
+                cl.BirthDate = Convert.ToDateTime(birthdate);
+            else
+                cl.BirthDate = null;
             if (cl == null)
                 return Json(new { success = false, error = "client was not found" }, JsonRequestBehavior.AllowGet);
             try
@@ -56,7 +59,7 @@ namespace HotelWebApplication.Controllers
             {
                 return Json(new { success = false, error = ex.Message }, JsonRequestBehavior.AllowGet);
             }
-            return Json(new { success = true }, JsonRequestBehavior.AllowGet);
+            return Json(new { success = true, name = cl.PersonalData }, JsonRequestBehavior.AllowGet);
         }
     }
 }

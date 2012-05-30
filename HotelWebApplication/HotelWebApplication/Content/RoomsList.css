@@ -1,0 +1,43 @@
+﻿#roomList
+{
+	position: relative;
+	float:left;
+	width: 800px;
+	height: 600px;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center
+}
+
+.room
+{
+	position: relative;
+	float: left;
+	width: 75%;
+	height: 150px;
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 20%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: Gray
+}
+
+#photo
+{
+	position: relative;
+	background-image: url(../Content/images/camera_a.png);
+	text-align: center;
+	width: 100px;
+	height: 100px;
+}
+
+#room_info
+{
+	position: relative;
+	float: left;
+	margin-left: 300px;
+	margin-top: -70px;
+	text-align: center
+}

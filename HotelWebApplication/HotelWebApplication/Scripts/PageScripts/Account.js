@@ -7,12 +7,14 @@ $(function () {
         var birthdate = $('#birthdateField').val();
         var phone = $('#phoneField').val();
         var client_id = $.cookie('id');
-        $.post("/Account/SaveAccount", {id: client_id, name: name, birthdate: birthdate, phone: phone }, function (response) {
+        $.post("/Account/SaveAccount", { id: client_id, name: name, birthdate: birthdate, phone: phone }, function (response) {
             if (!response.success) {
                 alert(response.error);
             }
             else {
                 alert("Changes was successfully saved");
+                $.cookie('name', response.name, { path: '/' });
+                $('#user_name').text(response.name);
             }
         });
     });

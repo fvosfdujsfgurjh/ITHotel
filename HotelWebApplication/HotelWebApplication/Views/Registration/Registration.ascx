@@ -4,6 +4,9 @@
 
 
 <link href="../../Content/Registration.css" rel="stylesheet" type="text/css" />
+<script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery.cookies.js" type="text/javascript"></script>
+<script src="../../Scripts/PageScripts/Registration.js" type="text/javascript"></script>
 
 <div id="RegMainData">
      <div id="InputsDiv">

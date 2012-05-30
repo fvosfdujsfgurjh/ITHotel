@@ -43,12 +43,5 @@ namespace HotelWebApplication.Controllers
                 return Json(new { success = false, error = ex.Message }, JsonRequestBehavior.AllowGet);
             }
         }
-
-        [HttpGet]
-        public void Logout()
-        {
-            Session["Client"] = null;
-        }
-
     }
 }
