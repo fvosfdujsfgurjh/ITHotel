@@ -96,6 +96,7 @@
     <Content Include="Content\images\about.png" />
     <Content Include="Content\images\account a.png" />
     <Content Include="Content\images\account.png" />
+    <Content Include="Content\images\AccountDialog.png" />
     <Content Include="Content\images\background_image.jpg" />
     <Content Include="Content\images\home a.png" />
     <Content Include="Content\images\home.png" />
@@ -177,7 +178,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Registration\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

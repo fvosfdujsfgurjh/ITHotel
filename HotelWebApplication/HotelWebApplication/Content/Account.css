@@ -1,6 +1,44 @@
 ﻿#accountMainData
 {
-	margin: 0 auto;
-	text-align: center;
-	border-color: Black
+    width: 400px;
+    height: 170px;
+    background-image:url(../Content/images/AccountDialog.png);
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    margin-left: 475px;
+    margin-top: 10px;
+    color: White;
+    border: none
 }
+
+.editor-label
+{
+    width: 40%;
+    position: relative;
+    float: left;
+    margin-left: 35px;
+    margin-top: 15px
+}
+
+.editor-field
+{
+    width: 48%;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    float: left
+}
+
+#SaveButtonDiv
+{
+    width: 100px;
+    height: 14px;
+    position: relative;
+    float: left;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 5px   
+}
+
+

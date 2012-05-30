@@ -3,7 +3,7 @@
 <%@ Import Namespace="HotelWebApplication.Models.Entity_Model" %>
 
 
-<link href="../../Content/Registration.css" rel="stylesheet" type="text/css" />
+ <link href="../../Content/Registration.css" rel="stylesheet" type="text/css" />
 
 <div id="RegMainData">
      <div id="InputsDiv">

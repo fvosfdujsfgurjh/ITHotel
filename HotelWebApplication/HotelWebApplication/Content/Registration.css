@@ -3,14 +3,13 @@
     
 }
 
-
 #RegMainData
 {
 	width: 335px;
 	height: 307px;
 	position: relative;
 	float: right;
-	background-image:url(../Content/images/Reg_dialog.png);
+	background-image:url(../Content/images/Reg_dialog.png); 
 	margin-right: 507px;
     margin-top: -110px
 }
