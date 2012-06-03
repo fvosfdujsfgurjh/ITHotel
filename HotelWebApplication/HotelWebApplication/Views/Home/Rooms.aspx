@@ -6,6 +6,7 @@
     <script src="../../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
     <script src="../../Scripts/jquery.cookies.js" type="text/javascript"></script>
     <script src="../../Scripts/PageScripts/RoomsList.js" type="text/javascript"></script>
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -24,10 +25,12 @@
         	        <li id="good_room" class="listItem">Хорошая комната</li>
                 	<li id="perfect_room" class="listItem">Отличная комната</li>
   	    	    </ul>
-            </div>        
-        <div id="rooms_view">
+            </div>      
+              
+            <div id="rooms_view">
+            </div>  
         </div>  
-    </div>  
+
   
 </asp:Content>
 

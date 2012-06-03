@@ -31,5 +31,12 @@ namespace HotelWebApplication.Controllers
             List<Room> rooms = HotelContext.GetAllRooms();
             return View("RoomsList", rooms);
         }
+
+        [HttpPost]
+        public ActionResult RoomInfo(string room_id)
+        {
+            Room room = HotelContext.GetRoomInfo(Convert.ToInt32(room_id));
+            return View("RoomInfo", room);
+        }
     }
 }

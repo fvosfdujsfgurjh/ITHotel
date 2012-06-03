@@ -3,6 +3,20 @@
     
 }
 
+/*
+#shade
+{   
+    z-index: 998; 
+    position: fixed;
+    top: 0; 
+    right: 0px; 
+    bottom: 0; 
+    left: 0; 
+    background-color: transparent;
+    border: 1px white solid
+}
+*/
+
 #RegMainData
 {
 	width: 335px;
@@ -10,8 +24,9 @@
 	position: relative;
 	float: right;
 	background-image:url(../Content/images/Reg_dialog.png); 
-	margin-right: 507px;
-    margin-top: -110px
+	margin-right: 0.2%;
+    margin-top: 30%;
+    z-index: 999; 
 }
 
 #RegUsername

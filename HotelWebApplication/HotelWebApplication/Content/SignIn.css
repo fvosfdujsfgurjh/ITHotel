@@ -29,7 +29,16 @@
 
 #signInButtonDiv
 {
-    width: 100px;
+    width: 60px;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    margin-left: 40px
+}
+
+#SignInCancelDiv
+{
+    width: 60px;
     position: relative;
     float: right;
     margin-top: 5px;
@@ -51,4 +60,5 @@
 	/*float: right;*/
 	margin-top: 40px;
 	background-image:url(../Content/images/Sign_dialog.png);
+	z-index: 200
 }

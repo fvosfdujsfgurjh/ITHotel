@@ -41,13 +41,15 @@
             
                 <div id="SaveButtonDiv">
                     <input type="button" id="saveButton" value="Save" />
-<<<<<<< HEAD
                 </div>
+                <div id="AccountCancelButtonDiv">
+                    <button id="AccounCancelButton"> Cancel </button>
+                </div>
+
             </fieldset>
-=======
+
                 </p>
             </div>
->>>>>>> ba3ec8352b592ccde5c5fd1d9eca98420a672afd
 
         <% } %>
 

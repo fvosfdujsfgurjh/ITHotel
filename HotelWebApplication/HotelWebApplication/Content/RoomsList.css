@@ -13,31 +13,35 @@
 {
 	position: relative;
 	float: left;
-	width: 75%;
+	width: 80%;
 	height: 150px;
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 3%;
 	margin-left: 10%;
-	margin-right: 20%;
+	margin-right: 9%;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 2px;
 	border-color: Gray
 }
 
 #photo
 {
+    width: 210px;
+	height: 140px;
 	position: relative;
-	background-image: url(../Content/images/camera_a.png);
-	text-align: center;
-	width: 100px;
-	height: 100px;
+	float: left;
+	background-image: url(../Content/images/RoomsPicture/1-1min.jpg);
+	margin-top: 5px;
+	margin-left: 5px;
+	text-align: center
+	
 }
 
 #room_info
 {
 	position: relative;
 	float: left;
-	margin-left: 300px;
-	margin-top: -70px;
+	margin-left: 355px;
+	margin-top: -85px;
 	text-align: center
 }

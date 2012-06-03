@@ -32,3 +32,8 @@ $(function () {
 
 });
 
+function showRoomInfo(elem) {
+    $.post("/Rooms/RoomInfo", { room_id: elem.id }, function (response) {
+        $('#rooms_view').html(response);
+    }); 
+}   

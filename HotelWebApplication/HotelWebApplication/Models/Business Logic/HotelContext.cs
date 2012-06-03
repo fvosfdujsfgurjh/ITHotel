@@ -100,6 +100,14 @@ namespace HotelWebApplication.Models.Business_Logic
             return rooms;
         }
 
+        public static Room GetRoomInfo(int room_id)
+        {
+            using (HoteDb dataModel = new HoteDb())
+            {
+                return dataModel.Rooms.Where(r => r.RoomID == room_id).First();
+            }
+        }
+
         public static List<Room> GetRoomsList(int room_type)
         {
             using (HoteDb dataModel = new HoteDb())
