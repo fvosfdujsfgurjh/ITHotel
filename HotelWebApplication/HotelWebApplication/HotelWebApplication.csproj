@@ -94,6 +94,9 @@
     <Content Include="Content\AboutCSS.css" />
     <Content Include="Content\images\about a.png" />
     <Content Include="Content\images\about.png" />
+    <Content Include="Content\images\AboutPicture\AboutPic1.jpg" />
+    <Content Include="Content\images\AboutPicture\AboutPic2.jpg" />
+    <Content Include="Content\images\AboutPicture\AboutPic3.jpg" />
     <Content Include="Content\images\account a.png" />
     <Content Include="Content\images\account.png" />
     <Content Include="Content\images\AccountDialog.png" />
